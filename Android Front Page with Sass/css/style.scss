@@ -1,0 +1,77 @@
+$colors: (
+    primary : #EA7773,
+    accent : #0A79DF,
+    font  : #fff
+);
+@function color($colorName){
+    @return map-get($map: $colors, $key: $colorName); 
+}
+$sizes : (
+    fontzero : 8px,
+    fontone : 15px,
+    fonttwo : 20px
+);
+@function size($size){
+    @return map-get($map: $sizes, $key: $size);
+}
+body , html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    .container {
+        /*Chrome,Safari*/
+        -webkit-clip-path: polygon(50% 0,100% 5%,100% 75%,50% 100%,0% 90%,0 0);
+        background-color:color(primary);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    header{
+        a{
+            color: color(font);
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-align: center;
+            padding-top: 14px;
+            display: block;
+        }
+    }
+    main{
+        section#mainimage{
+            background-color:color(accent);
+            margin: 1em auto;
+            padding-top: 15px;  
+            width: 80%;
+            color: color(font);
+            border-radius: 15px;
+        }
+        p{
+            margin: 0;
+            padding: 8px;
+            text-align: center;
+        }
+        section#mainbutton{
+            color: color(font);
+            text-align: center;
+            h1{
+                font-size: 1.5em;
+                margin-bottom: 2px;
+            }
+            p{
+                font-size: 1.5em;
+                margin-bottom: 5px;
+            }
+            a{
+                background-color:color(accent);
+                padding: 5px 30px;
+                margin-top: 1em;
+                text-decoration: none;
+                color: color(font);
+                font-size: 1.5em;
+                border-radius: 5px;
+            }
+        }
+    }
+}

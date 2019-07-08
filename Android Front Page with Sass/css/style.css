@@ -1,0 +1,67 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body .container {
+  /*Chrome,Safari*/
+  -webkit-clip-path: polygon(50% 0, 100% 5%, 100% 75%, 50% 100%, 0% 90%, 0 0);
+  background-color: #EA7773;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 14px;
+  display: block;
+}
+
+body main section#mainimage {
+  background-color: #0A79DF;
+  margin: 1em auto;
+  padding-top: 15px;
+  width: 80%;
+  color: #fff;
+  border-radius: 15px;
+}
+
+body main p {
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+}
+
+body main section#mainbutton {
+  color: #fff;
+  text-align: center;
+}
+
+body main section#mainbutton h1 {
+  font-size: 1.5em;
+  margin-bottom: 2px;
+}
+
+body main section#mainbutton p {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+body main section#mainbutton a {
+  background-color: #0A79DF;
+  padding: 5px 30px;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
