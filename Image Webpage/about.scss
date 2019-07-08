@@ -1,0 +1,30 @@
+@import "mixins";
+@import "btn";
+
+html{
+    height: 100vh;
+    @include coverImage("images/about.jpg");
+}
+body{
+    h1{
+        color: #F3B431;
+        font-size: 3rem;
+        text-align: center;
+    }
+    p{
+        color: #DAE0E2;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+.container{
+    text-align: center;
+}
+.btn-youtube{
+    @extend %btn;
+    background-color: #FF3E4D;
+}
+.btn-courses{
+    @extend %btn;
+    background-color: rgb(101, 235, 130);
+}
